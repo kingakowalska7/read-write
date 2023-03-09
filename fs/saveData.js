@@ -51,9 +51,10 @@ const path = require ('path');
       
              data.forEach(user => {
              const fileName = "${user.id}-${user.name}.txt";
+            
              const filePath = path.join(dirPath, fileName);
       
-             const userData = "${user.firstName}\n${user.lastName}\n${user.address.street}\n${user.address.zipCode} ${user.address.city}\n${user.phone}\n";
+             const userData = "${user.firstName}\n${user.lastName}\n${user.address.street}\n${user.address.zipCode}\n${user.address.city}\n${user.phone}\n";
                fs.writeFileSync(filePath, userData);
       
                console.log(`Zapisano dane użytkownika ${user.name} w pliku ${fileName}.`);
