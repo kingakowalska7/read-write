@@ -32,7 +32,7 @@ const path = require ('path');
 
      const rData = fs.readFileSync(filePath);
      const data = JSON.parse(rData);
-     console.log(data);
+    
 
       
           const dirPath = path.join(__dirname, folderName);
