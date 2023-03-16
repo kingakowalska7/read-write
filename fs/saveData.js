@@ -54,7 +54,7 @@ const path = require ('path');
             
              const filePath = path.join(dirPath, fileName);
       
-             const userData = `${user.name}\n${user.address.street}\n${user.address.zipcode}\n${user.address.city}\n${user.phone}\n`;
+             const userData = `Name:${user.name}\nStreet:${user.address.street}\nZip Code:${user.address.zipcode}\nCity:${user.address.city}\nPhone:${user.phone}\n`;
                fs.writeFileSync(filePath, userData);
       
                console.log(`Zapisano dane użytkownika ${user.name} w pliku ${fileName}.`);
